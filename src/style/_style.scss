@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oswald|PT+Sans+Narrow');
+
+.hero {
+  background-image: url(../assets/rick&devil.jpg);
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 50px;
+  align-items: center;
+  text-transform: capitalize;
+  color: white;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  border-bottom: #000000 solid 2px;
+  margin-bottom: 5rem;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.hide {
+  width: auto;
+  height: auto;
+  background: none;
+}
+
+.header__logo {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+.header__menu {
+  font-display: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 4rem;
+}
+
+.url-field {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.url-field__form {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: auto;
+  width: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  background: transparent;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  opacity: 0.70;
+  border: none;
+}
+
+.url-field__form__input {
+  box-sizing: border-box;
+  height: 2.5rem;
+  border: none;
+  flex: 1 1 auto;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+// .url-field__input {
+//     height: 2.5rem;
+//     
+//     flex: 1 1 auto;
+//     width: 50%;
+//     padding: 0 1rem;
+//     
+//     
+
+//     &:focus {
+//         box-shadow: 0 0 20px rgb(50, 139, 223);
+//     }
+// }
+
+.url-field__output {
+  height: 2.5rem;
+  width: 50%;
+  flex: 1 1 auto;
+  line-height: 2.5rem;
+  vertical-align: baseline;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  opacity: 0.70;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.url-field__output__link {
+  padding: 0 1rem;
+}
+
+.url-field__msg {
+  position: relative;
+  top: -15px;
+  color: white;
+  border-bottom: red solid 2px;
+}
+
+.card-link {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.198);
+  border-radius: 5px;
+}
+
+.card-link__field {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 2.5rem;
+
+}
+
+.old-link,
+.new-link {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.old-link__link,
+.new-link__link {
+  text-decoration: none;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: bold;
+  letter-spacing: 0.125rem;
+  margin: 0 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.old-link__link {
+  color: #000000d7;
+}
+
+.new-link__link {
+  color: rgba(19, 63, 11, 0.883);
+}
+
+.btn {
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 3px 6px;
+  text-transform: uppercase;
+  margin: 0 1rem;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.781);
+    color: #fff;
+  }
+}
+
+.btn--input {
+  margin: 0;
+}
+
+.btn--to-right {
+  margin-left: auto;
+}
+
+.new__link__clicked {
+  margin: 0 1rem;
+}
+
+.report {
+  margin: auto;
+}
